@@ -25,20 +25,6 @@ public class RobotMap {
 
     public static final int CLIMB_TALON_1 = 1;
     public static final int CLIMB_TALON_2 = 2;
-    // Solenoids
-    public static final int SHIFTER_1 = 3;
-    public static final int SHIFTER_2 = 2;
-
-    public static final int GEAR_HOLDER_1 = 0;
-    public static final int GEAR_HOLDER_2 = 1;
-
-    // DIGITAL INPUT
-    public static final int ENC_LEFT_1 = 0;
-    public static final int ENC_LEFT_2 = 1;
-    public static final int ENC_RIGHT_1 = 2;
-    public static final int ENC_RIGHT_2 = 3;
-
-    public static final int GEAR_SENSOR = 4;
   }
   
   public static class XBOX {
