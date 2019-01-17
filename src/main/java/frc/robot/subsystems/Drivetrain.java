@@ -9,10 +9,13 @@ import frc.robot.RobotMap;
 import frc.robot.commands.DriveControl;
 
 public class Drivetrain extends Subsystem {
+    public Drivetrain(){
+        
+    }
 
     @Override
     protected void initDefaultCommand() {
-
+        new DriveControl();
     }
 
 }
