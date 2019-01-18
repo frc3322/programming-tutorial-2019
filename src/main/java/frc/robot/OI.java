@@ -22,12 +22,14 @@ public class OI {
 
   Button buttonA = new JoystickButton(joystick, RobotMap.XBOX.BUTTON_A);
   Button buttonB = new JoystickButton(joystick, RobotMap.XBOX.BUTTON_B);
+  Button buttonX = new JoystickButton(joystick, RobotMap.XBOX.BUTTON_X);
 
   public OI(){
 
     buttonA.whenPressed(new driveForward());
     
     buttonB.whenPressed(new turnRight());
+    buttonX.whenPressed(new DriveBackwords());
   }
 
 }
