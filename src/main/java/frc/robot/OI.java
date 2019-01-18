@@ -21,7 +21,6 @@ public class OI {
   Joystick joystick = new Joystick(0);
 
   Button buttonA = new JoystickButton(joystick, RobotMap.XBOX.BUTTON_A);
-
   Button buttonB = new JoystickButton(joystick, RobotMap.XBOX.BUTTON_B);
 
   public OI(){
