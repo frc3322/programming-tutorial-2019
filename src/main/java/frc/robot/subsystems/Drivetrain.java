@@ -22,8 +22,17 @@ public class Drivetrain extends Subsystem {
         WPI_TalonSRX right2 = new WPI_TalonSRX(RobotMap.CAN.DRIVE_RIGHT_2);
         WPI_TalonSRX right3 = new WPI_TalonSRX(RobotMap.CAN.INDENTURED_SERVANT_R);
 
-        SpeedControllerGroup leftGroup = new SpeedControllerGroup(left1, left2, left3);
-        SpeedControllerGroup rightGroup = new SpeedControllerGroup(right1, right2, right3);
+        SpeedControllerGroup leftGroup = new SpeedControllerGroup(left1, left2);
+        SpeedControllerGroup rightGroup = new SpeedControllerGroup(right1, right2);
+        left3.follow(left1);
+        right3.follow(right1);
+
+        left1.setInverted(left_inv);
+        left2.setInverted(left_inv);
+        left3.setInverted(left_inv);
+        right1.setInverted(right_inv);
+        right2.setInverted(right_inv);
+        right3.setInverted(right_inv);
 
         robotDrive = new DifferentialDrive(leftGroup, rightGroup);
 
